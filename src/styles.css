@@ -1,0 +1,74 @@
+.grid-item {
+  padding: 10px;
+  color: peru;
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.about {
+  grid-area: about;
+}
+
+.previous {
+  grid-area: previous;
+}
+
+.proj1 {
+  grid-area: proj1;
+}
+
+.proj2 {
+  grid-area: proj2;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    height: 540px;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    font-size: small;
+    grid-template-areas: 
+      'navbar navbar'
+      'intro  intro'
+      'about about'
+      'previous previous'
+      'previous previous'
+      'proj1  proj1'
+      'proj2  proj2'
+      'contact  contact';
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    height: 540px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    font-size: small;
+    grid-template-areas: 
+      'navbar navbar'
+      'intro  intro'
+      'about  about'
+      'previous previous'
+      'previous previous'
+      'proj1  proj2'
+      'proj1  proj2'
+      'contact contact';
+  }
+}
