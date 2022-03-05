@@ -1,3 +1,10 @@
+.link {
+  padding: 25px;
+  background-color: peru;
+  text-decoration: none;
+  color: white;
+}
+
 .grid-item {
   padding: 10px;
   color: peru;
@@ -33,6 +40,7 @@
   grid-area: contact;
 }
 
+
 @media screen and (min-width: 414px) and (max-width: 767px) {
   .grid-container {
     display: grid;
@@ -58,7 +66,7 @@
     display: grid;
     height: 540px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8,200px)/*repeat(16, 5fr)*/;
     gap: 10px;
     font-size: small;
     grid-template-areas: 
@@ -69,6 +77,7 @@
       'previous previous'
       'proj1  proj2'
       'proj1  proj2'
+      'contact contact'
       'contact contact';
   }
 }
