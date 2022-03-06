@@ -1,6 +1,5 @@
 .link {
-  padding: 25px;
-  background-color: peru;
+  padding: 15px;
   text-decoration: none;
   color: white;
 }
@@ -10,14 +9,34 @@
   color: peru;
   font-size: 2.4em;
   text-align: center;
+  font-family: monospace;
 }
 
 .navbar {
   grid-area: navbar;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+h1 {
+  float: left;
+  font-size: x-large;
+  margin-top: 0px;
 }
 
 .intro {
   grid-area: intro;
+}
+
+h2 {
+  float: left;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.arrow {
+ float: right;
+ margin-right: 20px;
 }
 
 .about {
@@ -46,7 +65,7 @@
     display: grid;
     height: 540px;
     grid-template-columns: 90%;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     gap: 10px;
     font-size: small;
     grid-template-areas: 
@@ -66,11 +85,12 @@
     display: grid;
     height: 540px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8,200px);
+    grid-template-rows: repeat(10,100px);
     gap: 10px;
     font-size: small;
     grid-template-areas: 
       'navbar navbar'
+      'intro  intro'
       'intro  intro'
       'about  about'
       'previous previous'
