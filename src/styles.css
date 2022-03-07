@@ -101,7 +101,38 @@ b{
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    height: 540px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12,100px);
+    gap: 10px;
+    font-size: small;
+    grid-template-areas: 
+      'banner banner'
+      'about  about'
+      'about  about'
+      'previous previous'
+      'previous previous'
+      'previous previous'
+      'proj1  proj2'
+      'proj1  proj2'
+      'proj1  proj2'
+      'contact contact'
+      'contact contact'
+      'contact contact';
+  }
+  h1 {
+    font-size: 14pt;
+  }
+
+  h1 b {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (min-width: 901px) {
   .grid-container {
     display: grid;
     height: 540px;
