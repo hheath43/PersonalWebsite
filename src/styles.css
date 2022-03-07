@@ -2,11 +2,18 @@
   text-decoration: none;
   color: rgb(21, 13, 63);
   font-size: large;
+  opacity:1;
 }
 
 .link:hover {
-  background-color: rgb(21, 13, 63);
-  color: thistle;
+  /*opacity:0.5;*/
+  animation-name: springy-text;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 li {
@@ -32,6 +39,8 @@ li {
 
 .banner {
   grid-area: banner;
+  width: 100%;
+  height: 100px;
 }
 
 .about {
@@ -39,10 +48,14 @@ li {
   background-color: thistle;
   border-radius: 5px;
   margin:  20px;
+  border-bottom: 5px solid whitesmoke;
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 h1 {
-  font-size: 14pt;
+  font-size: 16pt;
   margin: 0px 20px 0px 20px;
   text-align: left;
 }
@@ -111,3 +124,21 @@ b{
       'contact contact';
   }
 }
+
+@keyframes colorChange {
+  0%    { border-bottom: 5px solid whitesmoke; }
+  20%   { border-bottom: 5px solid thistle }
+  60%   { border-bottom: 5px solid rebeccapurple }
+  100%  { border-bottom: 5px solid whitesmoke; } 
+}
+
+@keyframes springy-text {
+  0%   {
+    letter-spacing: 0.4em;
+    color: white;
+    }
+  100%   {
+    letter-spacing: 0.1em;
+    color: lime;
+    }
+  }
