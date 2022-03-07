@@ -84,16 +84,24 @@ b{
   grid-area: contact;
   border-top: 5px solid whitesmoke;
   background-color: whitesmoke;
+  border-radius: 5px;
   margin: 20px;
+  font-size: large;
+  color: yellowgreen;
 }
 
 h2 {
   float: left;
-  margin-left: 20px;
 }
 
 label{
   float: left;
+}
+
+.btn {
+  border-color: violet;
+  background-color: yellowgreen;
+  color: black;
 }
 
 footer{
