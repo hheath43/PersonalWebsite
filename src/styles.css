@@ -76,6 +76,11 @@ b{
   grid-area: proj1;
 }
 
+.card1, .card2 {
+  display: inline-block;
+}
+
+
 .proj2 {
   grid-area: proj2;
 }
@@ -87,7 +92,7 @@ b{
   border-radius: 5px;
   margin: 20px;
   font-size: large;
-  color: yellowgreen;
+  color: rebeccapurple;
 }
 
 h2 {
@@ -100,7 +105,7 @@ label{
 
 .btn {
   border-color: violet;
-  background-color: yellowgreen;
+  background-color: thistle;
   color: black;
 }
 
