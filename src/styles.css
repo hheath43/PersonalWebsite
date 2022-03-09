@@ -40,24 +40,31 @@ li {
   background-color: lightblue;
 }
 
-.about {
-  grid-area: about;
-  border-radius: 5px;
+.about1 {
+  grid-area: about1;
   margin:  20px;
+  text-align: center;
+}
+
+.about2 {
+  grid-area: about2;
+  margin:  20px;
+  text-align: center;
+  padding-top: 100px;
 }
 
 h1 {
   font-size: 15pt;
   margin: 20px;
   text-align: left;
-  border: 5px solid whitesmoke;
+  /*border: 5px solid whitesmoke;*/
 }
 
-h1:hover {
+/*h1:hover {
   animation-name: colorChange;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-}
+}*/
 
 b{
   font-size: 2em;
@@ -65,16 +72,17 @@ b{
 
 .previous {
   grid-area: previous;
+  margin: 20px 20px 20px 10px;
 }
 
-.courses {
+/*.courses {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 40px;
-  color:whitesmoke;
-}
+  color: black;
+}*/
 
 .one {
   animation: fadeIn 1s infinite alternate;
@@ -85,8 +93,9 @@ b{
 }
 
 h2 {
-  text-align: center;
-  margin-bottom: 40px;;
+  font-size: medium;
+  /*text-align: center;
+  margin-bottom: 40px;*/
 }
 
 .proj1 {
@@ -96,11 +105,15 @@ h2 {
 .card1, .card2 {
   display: inline-block;
   margin-left: 40px;
+  margin-bottom: 20px;
 }
 
-.desc1, .desc2 {
-  border-radius: 5px;
-  margin-top: 20px;
+.desc1 {
+  margin-left: 20px;
+}
+
+.desc2 {
+  margin-right: 20px;
 }
 
 h3, h4 {
@@ -146,6 +159,7 @@ label{
   height: 5rem;
   text-align: left;
   color: whitesmoke;
+  margin: 0px 20px 0px 20px;
 }
 
 
@@ -156,13 +170,12 @@ label{
     display: grid;
     height: 540px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(17, 150px);
+    grid-template-rows: repeat(16, 150px);
     gap: 10px;
     font-size: small;
     grid-template-areas: 
-      'about about'
-      'about about'
-      'previous previous'
+      'about1 about1'
+      'about2 about2'
       'previous previous'
       'previous previous'
       'previous previous'
@@ -178,6 +191,7 @@ label{
       'contact  contact'
       'footer footer';
   }
+
   h1 {
     font-size: 12pt;
   }
@@ -190,6 +204,18 @@ label{
     font-size: medium;
   }
 
+  .about2 {
+    padding: 0;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  .card1 {
+    margin: 0px 0px 20px 0px;
+  }
+
   .desc1 {
     margin-bottom: 20px;
   }
@@ -198,11 +224,11 @@ label{
   }
 
   h3, h4 {
-    font-size: 12;
+    font-size: 11;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 880px) {
   .grid-container {
     display: grid;
     height: 540px;
@@ -211,9 +237,8 @@ label{
     gap: 10px;
     font-size: small;
     grid-template-areas: 
-      'about  about'
-      'about  about'
-      'previous previous'
+      'about1  about2'
+      'about1  about2'
       'previous previous'
       'previous previous'
       'proj1  proj2'
@@ -232,9 +257,22 @@ label{
   h1 b {
     font-size: 1.7em;
   }
+
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    color: black;
+  }
+
+  .one, .two {
+    animation: none;
+  }
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 881px) {
   .grid-container {
     display: grid;
     height: 540px;
@@ -243,8 +281,8 @@ label{
     gap: 10px;
     font-size: small;
     grid-template-areas: 
-      'about  about'
-      'about  about'
+      'about1  about2'
+      'about1  about2'
       'previous previous'
       'previous previous'
       'proj1  proj2'
@@ -255,6 +293,15 @@ label{
       'contact contact'
       'contact  contact'
       'footer footer';
+  }
+
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    color: black;
   }
 }
 
