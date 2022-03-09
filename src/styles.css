@@ -2,6 +2,7 @@
   --indigo: #1773FF;
   --light-grey: #f9f9f9;
 }*/
+
 a {
   text-decoration: none;
   font-size: large;
@@ -36,24 +37,23 @@ li {
   justify-content: space-evenly;
   align-items: center;
   border-bottom: 5px solid whitesmoke;
-  background-color: thistle;
+  background-color: lightblue;
 }
 
 .about {
   grid-area: about;
-  background-color: thistle;
   border-radius: 5px;
   margin:  20px;
-  border: 5px solid whitesmoke;
-  animation-name: colorChange;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
 }
 
 h1 {
   font-size: 15pt;
-  margin: 0px 20px 0px 20px;
+  margin: 20px;
   text-align: left;
+  border: 5px solid whitesmoke;
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 b{
@@ -96,7 +96,6 @@ h2 {
 }
 
 .desc1, .desc2 {
-  background-color: thistle;
   border-radius: 5px;
   margin-top: 20px;
 }
@@ -174,7 +173,7 @@ label{
     display: grid;
     height: 540px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(12,100px);
+    grid-template-rows: repeat(12,200px);
     gap: 10px;
     font-size: small;
     grid-template-areas: 
@@ -205,7 +204,7 @@ label{
     display: grid;
     height: 540px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(13,100px);
+    grid-template-rows: repeat(13,150px);
     gap: 10px;
     font-size: small;
     grid-template-areas: 
@@ -213,13 +212,10 @@ label{
       'about  about'
       'previous previous'
       'previous previous'
-      'previous previous'
       'proj1  proj2'
       'proj1  proj2'
       'proj1  proj2'
-      'proj1  proj2'
-      'proj1  proj2'
-      'contact contact'
+      'space  space'
       'contact contact'
       'contact contact'
       'contact  contact'
