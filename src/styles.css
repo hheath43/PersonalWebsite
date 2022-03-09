@@ -28,7 +28,7 @@ li {
   padding: 10px;
   color: rgb(21, 13, 63);
   text-align: center;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -168,7 +168,7 @@ label{
 @media screen and (min-width: 414px) and (max-width: 767px) {
   .grid-container {
     display: grid;
-    height: 540px;
+    /*height: 540px;*/
     grid-template-columns: 1fr;
     grid-template-rows: repeat(16, 150px);
     gap: 10px;
@@ -204,7 +204,7 @@ label{
   }
 
   a {
-    font-size: medium;
+    font-size: 8pt;
   }
 
   .about2 {
@@ -219,7 +219,13 @@ label{
     margin: 0px 0px 20px 0px;
   }
 
+  .card2 a {
+    margin-right: 40px;
+
+  }
+
   .desc1 {
+    margin-left: 0;
     margin-bottom: 20px;
   }
   .desc2 {
