@@ -6,6 +6,7 @@ function handleSubmit(event) {
   let emailEle= document.querySelector('#email');
   let messageEle = document.querySelector('#message')
 
+  event.preventDefault();
   alert('Message submitted!')
 
   nameEle.value = '';
