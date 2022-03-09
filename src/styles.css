@@ -51,6 +51,9 @@ h1 {
   margin: 20px;
   text-align: left;
   border: 5px solid whitesmoke;
+}
+
+h1:hover {
   animation-name: colorChange;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -152,19 +155,50 @@ label{
   .grid-container {
     display: grid;
     height: 540px;
-    grid-template-columns: 90%;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(17, 150px);
     gap: 10px;
     font-size: small;
     grid-template-areas: 
-      'navbar navbar'
-      'intro  intro'
+      'about about'
       'about about'
       'previous previous'
       'previous previous'
+      'previous previous'
+      'previous previous'
       'proj1  proj1'
+      'prog1  prog1'
+      'prog1  prog1'
       'proj2  proj2'
-      'contact  contact';
+      'proj2  proj2'
+      'proj2  proj2'
+      'space  space'
+      'contact  contact'
+      'contact  contact'
+      'contact  contact'
+      'footer footer';
+  }
+  h1 {
+    font-size: 12pt;
+  }
+
+  h1 b {
+    font-size: 1.4em;
+  }
+
+  a {
+    font-size: medium;
+  }
+
+  .desc1 {
+    margin-bottom: 20px;
+  }
+  .desc2 {
+    margin-top: 20px;
+  }
+
+  h3, h4 {
+    font-size: 12;
   }
 }
 
@@ -173,11 +207,10 @@ label{
     display: grid;
     height: 540px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(12,200px);
+    grid-template-rows: repeat(13,150px);
     gap: 10px;
     font-size: small;
     grid-template-areas: 
-      'banner banner'
       'about  about'
       'about  about'
       'previous previous'
@@ -186,9 +219,11 @@ label{
       'proj1  proj2'
       'proj1  proj2'
       'proj1  proj2'
+      'space  space'
       'contact contact'
       'contact contact'
-      'contact contact';
+      'contact contact'
+      'footer footer';
   }
   h1 {
     font-size: 14pt;
