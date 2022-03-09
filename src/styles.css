@@ -2,13 +2,12 @@
   --indigo: #1773FF;
   --light-grey: #f9f9f9;
 }*/
-
-.link {
+a {
   text-decoration: none;
-  color: rgb(21, 13, 63);
   font-size: large;
-  opacity:1;
+  color: rgb(21, 13, 63);
 }
+
 
 .link:hover {
   animation-name: springy-text;
@@ -27,7 +26,6 @@ li {
 .grid-item {
   padding: 10px;
   color: rgb(21, 13, 63);
-  font-size: 2.4em;
   text-align: center;
   font-family: monospace;
 }
@@ -39,12 +37,6 @@ li {
   align-items: center;
   border-bottom: 5px solid whitesmoke;
   background-color: thistle;
-}
-
-.banner {
-  grid-area: banner;
-  width: 100%;
-  height: 100px;
 }
 
 .about {
@@ -78,6 +70,21 @@ b{
 
 .card1, .card2 {
   display: inline-block;
+  margin-left: 40px;
+}
+
+.desc1, .desc2 {
+  background-color: thistle;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+h3, h4 {
+  font-size: 15pt;
+}
+
+.fa {
+  color: rgba(18, 194, 135, 0.788);
 }
 
 
@@ -91,7 +98,7 @@ b{
   background-color: whitesmoke;
   border-radius: 5px;
   margin: 20px;
-  font-size: large;
+  font-size: 15pt;
   color: rebeccapurple;
 }
 
@@ -109,12 +116,15 @@ label{
   color: black;
 }
 
-footer{
-  position: absolute; 
-  bottom: 0;
+.footer{
+  grid-area: footer;
   width: 100%;
-  height: 2.5rem;
+  height: 5rem;
+  text-align: left;
+  color: whitesmoke;
 }
+
+
 
 
 @media screen and (min-width: 414px) and (max-width: 767px) {
@@ -177,12 +187,13 @@ footer{
     gap: 10px;
     font-size: small;
     grid-template-areas: 
-      'banner banner'
       'about  about'
       'about  about'
       'previous previous'
       'previous previous'
       'previous previous'
+      'proj1  proj2'
+      'proj1  proj2'
       'proj1  proj2'
       'proj1  proj2'
       'proj1  proj2'

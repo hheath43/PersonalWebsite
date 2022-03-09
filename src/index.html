@@ -23,8 +23,6 @@
     </header>
     <main>
       <section class="grid-container">
-        <div class="grid-item banner" id="banner">
-        </div>
         <div class="grid-item about" id="about">
           <h1><b>Welcome! My name is Hannah Heath,</b> I'm a computer science graduate student at 
             Portland State University. This is my personal portfolio site, come check it out!
@@ -35,15 +33,25 @@
           <div class="card1">
             <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_qkroghd7.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
             <i class="fa fa-github"></i>
-            <a href="https://github.com/hheath43/apptbook-android">AppointmentBook App</a>
+            <a class="link" href="https://github.com/hheath43/apptbook-android">AppointmentBook App</a>
+          </div>
+          <div class="desc1">
+            <h3>An Android application written in Java that allows a user to create an appointment AppointmentBook
+              where they can store appointment date, time, and a description of the appointment.
+            </h3>
           </div>
         </div>
         <div class="grid-item proj2" id="proj2">
           <div class="card2">
             <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_mymcy4zr.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
             <i class="fa fa-github"></i>
-            <a href="https://github.com/hheath43/Cryptography-Proj2">Public-Key Cryptosystem</a>
+            <a class="link" href="https://github.com/hheath43/Cryptography-Proj2">Public-Key Cryptosystem</a>
           </div> 
+          <div class="desc2">
+            <h4>A Python program that mimics a public-key cryptosystem, it allows the user to encrypt/decrypt 
+              a test file of any length, plaintext and/or ciphertext, or just key generation.
+            </h4>
+          </div>
         </div>
         <div class="grid-item contact row my-5" id="contact">
           <h2>CONTACT ME</h2>
@@ -68,7 +76,9 @@
             </div>
           </form>
         </div>
-        <div class="grid-item footer" id="footer">FOOTER</div>
+        <footer class="grid-item footer" id="footer">
+          <span>© Hannah Heath 2022</span>
+        </footer>
       </section>
     </main>
   </body>
