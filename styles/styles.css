@@ -1,12 +1,12 @@
-/*:root {
-  --indigo: #1773FF;
-  --light-grey: #f9f9f9;
-}*/
+:root {
+  --dark-grey: #383838;
+  --teal-blue: #86B6B6;
+}
 
 a {
   text-decoration: none;
   font-size: large;
-  color: #383838;
+  color: var(--dark-grey);
 }
 
 
@@ -26,9 +26,10 @@ li {
 
 .grid-item {
   padding: 10px;
-  color: #383838;
+  color: var(--dark-grey);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
 }
 
 .navbar {
@@ -42,13 +43,11 @@ li {
 
 .about1 {
   grid-area: about1;
-  margin:  20px;
   text-align: center;
 }
 
 .about2 {
   grid-area: about2;
-  margin:  20px;
   text-align: center;
   padding-top: 100px;
 }
@@ -57,14 +56,7 @@ h1 {
   font-size: 15pt;
   margin: 20px;
   text-align: left;
-  /*border: 5px solid whitesmoke;*/
 }
-
-/*h1:hover {
-  animation-name: colorChange;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}*/
 
 b{
   font-size: 2em;
@@ -72,20 +64,11 @@ b{
 
 .previous {
   grid-area: previous;
-  margin: 20px 20px 20px 10px;
+  margin-left: 10px;
   background-color: lightblue;
   border: 5px solid whitesmoke;
   border-radius: 5px;
 }
-
-/*.courses {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 40px;
-  color: black;
-}*/
 
 .one {
   animation: fadeIn 1s infinite alternate;
@@ -97,8 +80,6 @@ b{
 
 h2 {
   font-size: medium;
-  /*text-align: center;
-  margin-bottom: 40px;*/
 }
 
 .proj1 {
@@ -108,7 +89,6 @@ h2 {
 .card1, .card2 {
   display: inline-block;
   margin-left: 40px;
-  margin-bottom: 20px;
 }
 
 .desc1 {
@@ -124,7 +104,7 @@ h3, h4 {
 }
 
 .fa {
-  color: rgba(18, 194, 135, 0.788);
+  color: lightblue;
 }
 
 
@@ -137,9 +117,7 @@ h3, h4 {
   border-top: 5px solid whitesmoke;
   background-color: lightblue;
   border-radius: 5px;
-  margin: 20px;
   font-size: 15pt;
-  /*color: rebeccapurple;*/
 }
 
 h5 {
@@ -151,15 +129,15 @@ label{
 }
 
 .btn {
-  border-color: #383838;
+  border-color: var(--dark-grey);
   background-color: whitesmoke;
-  color: #383838;
+  color: var(--dark-grey);
 }
 
 .btn:hover {
-  border-color: #383838;
-  background-color: whitesmoke;
-  color: #383838;
+  border-color: var(--dark-grey);
+  background-color: var(--dark-grey);
+  color: whitesmoke;
 }
 
 .footer{
@@ -171,7 +149,7 @@ label{
 }
 
 body {
-  background-color: #86B6B6;
+  background-color: var(--teal-blue);
 }
 
 
@@ -180,7 +158,6 @@ body {
 @media screen and (min-width: 414px) and (max-width: 767px) {
   .grid-container {
     display: grid;
-    /*height: 540px;*/
     grid-template-columns: 1fr;
     grid-template-rows: repeat(16, 150px);
     gap: 10px;
@@ -256,7 +233,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 880px) {
   .grid-container {
     display: grid;
-    height: 540px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(12,150px);
     gap: 10px;
@@ -327,13 +303,6 @@ body {
     margin-top: 40px;
     gap: 40px;
   }
-}
-
-@keyframes colorChange {
-  0%    { border: 5px solid whitesmoke; }
-  20%   { border: 5px solid thistle }
-  60%   { border: 5px solid rebeccapurple }
-  100%  { border: 5px solid whitesmoke; } 
 }
 
 @keyframes springy-text {
